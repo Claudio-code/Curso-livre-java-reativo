@@ -1,5 +1,5 @@
 # Sobre conteudo do curso
-- Ensinando como usar a implementação do padrão Reactor em Java.
+- Ensinando como usar a programação reativa com Reactor em Java.
 
 
 ## Conseitos basicos do reactor
