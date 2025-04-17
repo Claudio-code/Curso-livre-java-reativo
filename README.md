@@ -14,7 +14,7 @@
 
 ---
 
-### Schedulers != Execução-paralela
+### Schedulers != Execução paralela
 
 - Todas as operações são sempre executadas de forma sequencial.
 - Os dados são processados um por um através de 1 thread no ThreadPool para um Subscriber.
