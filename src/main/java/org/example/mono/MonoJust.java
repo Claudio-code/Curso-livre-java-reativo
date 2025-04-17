@@ -20,6 +20,16 @@ public class MonoJust {
         Mono<Integer> mono = Mono.just(1);
         System.out.println(mono);
 
-        mono.subscribe(System.out::println);
+        mono
+                .onErrorComplete(throwable -> {
+                    System.out.println("Erro: " + throwable.getMessage());
+                    return true;
+                })
+                .doFinally(signalType -> {
+                    System.out.println("Finalizando o fluxo");
+                })
+                .subscribe(integer -> {
+                    System.out.println("integer: " + integer);
+                });
     }
 }
